@@ -324,7 +324,7 @@ h3.footer-widget-title {
 	background-color: #111;
 	background-size: cover;
     background-position: center;
-	background: url(/images/hero_2.jpg);
+	background: url(images/hero_2.jpg);
 	overflow: hidden;
 	transition: 0.5s;
 	text-align:center;
