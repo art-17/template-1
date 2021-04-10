@@ -594,9 +594,9 @@ h3.footer-widget-title {
 .card:hover .specifies p, .card:hover .specifies button{
     display: block;
  }
-@media (min-width: 1921px){
+@media (min-width: 1920px){
     .container, .container-lg, .container-md, .container-sm, .container-xl {
-        max-width: 1752px;
+        max-width: 1440px !important;
     }
     .footer-section>.container {
         max-width: 1140px;
