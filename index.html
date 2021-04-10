@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="site-wrap">
+        <!-- begin header -->
+        <header class="header">
+            <nav class="navbar navbar-expand-md navbar-light fixed-top">
+                <a class="navbar-brand"><img src="thumbnail.svg" alt=""></a>
+                <button type="button" class="navbar-toggler bg-light" data-toggle="collapse" data-target="#nav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="nav">
+                    <ul class=" navbar-nav navbar-right">
+                        <li class="nav-item">
+                            <a class=" nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class=" nav-link active" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class=" nav-link" href="#">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class=" nav-link" href="#" onclick="openOtpSidebar()">Login</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </nav>
+        </header>
+        <!-- end header -->
+
+        <!-- begin main -->
+        <div class="intro-section" id="home-section">
+            <div class="slide-1" style="background-image: url('hero_1.jpg'); background-position: 50% -25px;"
+                data-stellar-background-ratio="0.5">
+                <div class="container">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-12">
+                            <div class="row d-flex align-items-center">
+                                <div class="col-lg-6 mb-4">
+                                    <h1 class="">Learn From The Expert</h1>
+                                    <p class="mb-5">Lorem ipsum dolor sit amet
+                                        consectetur adipisicing elit. Maxime ipsa nulla sed quis rerum amet natus quas
+                                        necessitatibus sit amet consectetur adipisicing elit. Maxime ipsa nulla sed quis</p>
+                                    <a href="#" class="btn btn-white px-5 mr-4" onclick="startPlan()">Start a plan</a>
+                                    <a href="#" class="btn btn-white btn-outline-white px-5">Get in touch</a>
+                                </div>
+                                <div class="col-lg-5 ml-auto h-50 text-center">
+                                    <ion-icon name="caret-forward-circle-outline"></ion-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end main -->
+        <footer class="footer-section bg-color-1">
+            <div class="container">
+                <div class="row  justify-content-center">
+                    <div class="col-md-3  align-self-center text-center">
+                        <img src="logo.svg" alt="">
+                        <ul class="list-unstyled footer-social-links mt-3">
+                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h3 class="footer-widget-title">About Us</h3>
+                        <ul class="list-unstyled footer-links">
+                            <li><a href="#">Who we are</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h3 class="footer-widget-title">Advisory</h3>
+                        <ul class="list-unstyled footer-links">
+                            <li><a href="#">Financial Planning</a></li>
+                            <li><a href="#">Financial Planning</a></li>
+                            <li><a href="#">Financial Planning</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h3 class="footer-widget-title">Others</h3>
+                        <ul class="list-unstyled footer-links">
+                            <li><a href="#">Financial Planning</a></li>
+                            <li><a href="#">Financial Planning</a></li>
+                            <li><a href="#">Financial Planning</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row pt-2 text-center b-footer">
+                    <div class="col-md-12">
+                        <div class="border-top pt-2">
+                            <p>
+                                Copyright &copy;
+                                2021 Financial Hospital LLP. All rights reserved</a>
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro consectetur ut hic ipsum
+                                et
+                                veritatis</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div id="otpSidebar" class="sidenavOTP">
+        <div class="d-lg-flex half">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeOtpSidebar()">
+                <ion-icon name="arrow-back-outline"></ion-icon>
+            </a>
+            <div class="order-1 order-md-2"></div>
+            <div class="contents order-2 order-md-1">
+                <div class="container">
+                    <div class="row align-items-center justify-content-center position-relative">
+                        <div class="col-md-8">
+                            <form>
+                                <div class="form-group first">
+                                    <div class="otp-wrapper otp-event">
+                                        <div class="otp-container">
+                                            <input type="tel" id="otp-number-input-1" class="otp-number-input"
+                                                maxlength="1" autocomplete="off">
+                                            <input type="tel" id="otp-number-input-2" class="otp-number-input"
+                                                maxlength="1" autocomplete="off">
+                                            <input type="tel" id="otp-number-input-3" class="otp-number-input"
+                                                maxlength="1" autocomplete="off">
+                                            <input type="tel" id="otp-number-input-4" class="otp-number-input"
+                                                maxlength="1" autocomplete="off">
+                                        </div>
+                                    </div>
+                                    <div class="content-label">
+                                        <a>Resend OTP</a>
+                                    </div>
+
+                                </div>
+                                <button type="submit" value="Submit" class="btn btn-success px-5">Submit</button>
+                                <div class="text-center time-remain mt-4">08:45</div>
+
+                            </form>
+                        </div>
+                        <div class="footer-block">
+                            <p class="m-0">The OTP was sent to - 98985654</p>
+                            <div class="content-label pt-2 pb-5">
+                                <a>Change the phone number</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="plansPanel" class="plans">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+            <ion-icon name="arrow-back-outline"></ion-icon>
+        </a>
+        <div class="plan d-flex w-100">
+            <div class="w-40">
+                <div class="plan-list">
+                    <a class="" >
+                        <div class="card">
+                            <img class="card-img-top" src="neon-lights.jpg" alt="Card image cap">
+                            <div class="card-body specifies">
+                                <h2>Expert Advisory</h2>
+                                <p class="card-text">Lorem ipsum dolor sit amet
+                                    consectetur adipisicing elit. Maxime ipsa nulla sed quis rerum amet natus quas
+                                    necessitatibus sit</p>
+                                <button id="expertBlock" class="btn btn-success text-capitalCase f-16">Start</button>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" >
+                        <div class="card">
+                            <img class="card-img-top" src="neon-lights.jpg" alt="Card image cap">
+                            <div class="card-body specifies">
+                                <h2>Automated Advisory</h2>
+                                <p class="card-text">Lorem ipsum dolor sit amet
+                                    consectetur adipisicing elit. Maxime ipsa nulla sed quis rerum amet natus quas
+                                    necessitatibus sit</p>
+                                <button id="automatedBlock" class="btn btn-success text-capitalCase f-16">Start</button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="w-60">
+              
+                <div id="plansPanelInner" class="plansInner">
+                    <div id="expertBlockInner">
+                        <div class="col-md-12 text-center">
+                            <div class="form-header mb-5">
+                                <h3>Welcome back!</h3>
+                                <p>Enter your details</p>
+                            </div>
+                            <form class="pt-5">
+                                <div class="form-group mb-5">
+                                    <div class="otp-wrapper otp-event">
+                                        <input type="tel" class="otp-number-input form-control"
+                                            placeholder="Mobile Number" />
+                                    </div>
+                                    <div class="content-label-2 text-left">
+                                        <a>We will send an OTP to the provided phone number</a>
+                                    </div>
+                                </div>
+                                <button type="submit" value="Submit"
+                                    class="btn btn-success px-5 text-capitalCase" >login/register</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div id="automatedBlockInner">
+                      
+                        <div class="col-md-12 text-center">
+                            <div class="form-header mb-5">
+                                <h3>Automated Advisory</h3>
+                                <p>Enter your details</p>
+                            </div>
+                            <form class="pt-5">
+                                <div class="form-group mb-5">
+                                    <div class="otp-wrapper otp-event">
+                                        <input type="tel" class="otp-number-input form-control"
+                                            placeholder="Mobile Number" />
+                                    </div>
+                                    <div class="content-label-2 text-left">
+                                        <a>We will send an OTP to the provided phone number</a>
+                                    </div>
+                                </div>
+                                <button type="submit" value="Submit"
+                                    class="btn btn-success px-5 text-capitalCase" >login/register</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script>
+        // OTP Sidebar panel
+        function openOtpSidebar() {
+            document.getElementById("otpSidebar").style.width = "100%";
+        }
+
+        function closeOtpSidebar() {
+            document.getElementById("otpSidebar").style.width = "0";
+        }
+        // registration Sidebar panel
+        function startPlan() {
+            document.getElementById("plansPanel").style.width = "550px";
+        }
+        function closeNav() {
+            document.getElementById("plansPanel").style.width = "0";
+            document.getElementById("expertBlockInner").style.display = "none";
+            document.getElementById("automatedBlockInner").style.display = "none";
+            document.getElementById("plansPanelInner").style.display = "none";
+        }
+
+        $("#expertBlock").on('click', function () {
+            $(this).closest('#plansPanel').css('width', '1200px');
+            $('#plansPanelInner').show();
+            $("#expertBlockInner").fadeIn();
+            $("#automatedBlockInner").fadeOut();
+
+        });
+        $("#automatedBlock").on('click', function () {
+            $('#plansPanelInner').show();
+            $("#automatedBlockInner").fadeIn();
+            $("#expertBlockInner").fadeOut();
+        });
+    </script>
+
+</body>
+
+</html>
